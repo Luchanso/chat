@@ -6,7 +6,12 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "4.14.0",
+    "mocha": "3.1.2",
+    "should": "11.1.1",
+    "socket.io": "1.5.1"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node src/app",
@@ -22,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/Luchanso/chat/issues"
   },
-  "homepage": "https://github.com/Luchanso/chat#readme"
+  "homepage": "https://github.com/Luchanso/chat#readme",
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  }
 }
