@@ -22,9 +22,9 @@ function sendMsg() {
   let nickname = $('#nickname').val();
   let msg = $('#msg').val();
 
-  if (msg.length === 0)     return alert('You try to send empty message');
-  if (msg.length >= 1024)   return alert('Message too long, maximal length: 1024');
-  if (nickname.length < 3)  return alert('Nickname too short');
+  if (msg.length === 0)     return Materialize.toast('You try to send empty message', 4000);
+  if (msg.length >= 1024)   return Materialize.toast('Message too long, maximal length: 1024', 4000);
+  if (nickname.length < 3)  return Materialize.toast('Nickname too short', 4000);
 
   socket.emit('NewMsg', {
     nickname: nickname,
