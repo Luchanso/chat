@@ -1,6 +1,8 @@
 # Chat
 Simple chat on NodeJS
 
+Example app: https://luchanso-chat.herokuapp.com/
+
 ```sh
 npm install mocha -g
 npm install socket.io express mocha should
