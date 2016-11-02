@@ -24,7 +24,7 @@ function sendMsg() {
 
   if (msg.length === 0)     return Materialize.toast('You try to send empty message', 4000);
   if (msg.length >= 1024)   return Materialize.toast('Message too long, maximal length: 1024', 4000);
-  if (nickname.length < 3)  return Materialize.toast('Nickname too short', 4000);
+  if (nickname.length <= 3)  return Materialize.toast('Nickname too short', 4000);
 
   socket.emit('NewMsg', {
     nickname: nickname,
