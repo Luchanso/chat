@@ -7,7 +7,6 @@ socket.on('GetChatHistory', function(data) {
 });
 
 socket.on('NewMsg', function(data) {
-  console.log(data)
   $('.msgs').append(format(data, data.nickname === $('#nickname').val()));
 });
 
