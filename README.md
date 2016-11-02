@@ -18,4 +18,9 @@ npm i --save-dev
 npm test
 ```
 
-Open 8080 port in your browser
+running
+```
+npm start
+```
+
+Open http://localhost:8080 in your browser
